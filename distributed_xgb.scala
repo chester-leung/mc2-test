@@ -3,10 +3,9 @@ import org.apache.spark.sql.types.{DoubleType, StringType, StructField, StructTy
 import org.apache.spark.ml.feature.VectorAssembler
 import ml.dmlc.xgboost4j.scala.spark.XGBoostRegressor
 import org.apache.spark.ml.evaluation.RegressionEvaluator
+import org.apache.spark.sql.functions.rand
 
 
-// object DistributedXBG {
-// 	def main(args: Array[String]) {
 val spark = SparkSession.builder().getOrCreate()
 
 // Train the Model
@@ -103,18 +102,21 @@ val schema = new StructType(Array(
 	StructField("89", DoubleType, true),
 	StructField("90", DoubleType, true)))
 
-val training_data_df = spark.read.schema(schema).csv("/Users/Chester/Cal/5/mc2/msd_training_data.csv")
+val training_data_df = spark.read.schema(schema).csv("/home/ubuntu/mc2/msd_training_data.csv")
 
 val vectorAssembler = new VectorAssembler().
   setInputCols(Array("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90"
 )).
   setOutputCol("features")
 
-val xgbInput = vectorAssembler.transform(training_data_df).select("features", "year")
+val transformed_df = vectorAssembler.transform(training_data_df)
+
+// Select two columns and shuffle data
+val xgbInput = transformed_df.select("features", "year").orderBy(rand())
 
 val xgbParam = Map(
-	"eta" -> 0.3,
-	"max_depth" -> 2,
+	"eta" -> 0.1,
+	"max_depth" -> 3,
 	"num_round" -> 100,
 	"num_workers" -> 2
 )
@@ -123,27 +125,47 @@ val xgbRegressor = new XGBoostRegressor(xgbParam).setFeaturesCol("features").set
 val xgbModel = xgbRegressor.fit(xgbInput)
 
 // Evaluation
-val test_data_df = spark.read.schema(schema).csv("/Users/Chester/Cal/5/mc2/msd_test_data.csv")
-val predictions = xgbModel.transform(test_data_df)
+val test_data_df = spark.read.schema(schema).csv("/home/ubuntu/mc2/msd_test_data.csv")
+val test_set = vectorAssembler.transform(test_data_df).select("features", "year")
+val predictions = xgbModel.transform(test_set)
 
-// Mean Absolute Error
-val mae_evaluator = new RegressionEvaluator()
-      .setMetricName("mae")
-      .setLabelCol("year")
-      .setPredictionCol("prediction")
+// Root Mean Absolute Error
+val mae_evaluator = new RegressionEvaluator().setMetricName("mae").setLabelCol("year").setPredictionCol("prediction")
 
 val mae = mae_evaluator.evaluate(predictions)
 println(s"Mean Absolute Error: $mae")
 
 // Mean Squared Error
-val mse_evaluator = new RegressionEvaluator()
-      .setMetricName("mse")
-      .setLabelCol("year")
-      .setPredictionCol("prediction")
+val rmse_evaluator = new RegressionEvaluator().setMetricName("rmse").setLabelCol("year").setPredictionCol("prediction")
 
-val mse = mse_evaluator.evaluate(predictions)
-println(s"Mean Squared Error: $mse")
+val rmse = rmse_evaluator.evaluate(predictions)
+println(s"Root Mean Squared Error: $rmse")
 
 
-// 	}
-// }
+// Train Second Model with Biased Data
+println("\n\n------------ Training with Bias --------------\n\n")
+val biased_transformed_df = transformed_df.sort($"year")
+val biased_xgbInput = biased_transformed_df.select("features", "year")
+
+println("Unbiased Input")
+xgbInput.show()
+println("Biased Input")
+biased_xgbInput.show()
+
+val biased_xgbRegressor = new XGBoostRegressor(xgbParam).setFeaturesCol("features").setLabelCol("year")
+val biased_xgbModel = biased_xgbRegressor.fit(biased_xgbInput)
+
+// Evaluation
+val biased_predictions = biased_xgbModel.transform(test_set)
+
+// Mean Absolute Error
+val biased_mae_evaluator = new RegressionEvaluator().setMetricName("mae").setLabelCol("year").setPredictionCol("prediction")
+
+val biased_mae = biased_mae_evaluator.evaluate(biased_predictions)
+println(s"Mean Absolute Error with Biased Dataset: $biased_mae")
+
+// Root Mean Squared Error
+val biased_rmse_evaluator = new RegressionEvaluator().setMetricName("rmse").setLabelCol("year").setPredictionCol("prediction")
+
+val biased_rmse = biased_rmse_evaluator.evaluate(biased_predictions)
+println(s"Root Mean Squared Error: $biased_rmse")
