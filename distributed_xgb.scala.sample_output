@@ -1,0 +1,109 @@
+scala> :load /home/ubuntu/mc2/distributed_xgb.scala
+Loading /home/ubuntu/mc2/distributed_xgb.scala...
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.types.{DoubleType, StringType, StructField, StructType}
+import org.apache.spark.ml.feature.VectorAssembler
+import ml.dmlc.xgboost4j.scala.spark.XGBoostRegressor
+import org.apache.spark.ml.evaluation.RegressionEvaluator
+import org.apache.spark.sql.functions.rand
+spark: org.apache.spark.sql.SparkSession = org.apache.spark.sql.SparkSession@4b20a8e4
+schema: org.apache.spark.sql.types.StructType = StructType(StructField(year,DoubleType,true), StructField(1,DoubleType,true), StructField(2,DoubleType,true), StructField(3,DoubleType,true), StructField(4,DoubleType,true), StructField(5,DoubleType,true), StructField(6,DoubleType,true), StructField(7,DoubleType,true), StructField(8,DoubleType,true), StructField(9,DoubleType,true), StructField(10,DoubleType,true), StructField(11,DoubleType,true), StructField(12,DoubleType,true), StructField(13,DoubleType,true), StructField(14,DoubleType,true), StructField(15,DoubleType,true), StructField(16,DoubleType,true), StructField(17,DoubleType,true), StructField(18,DoubleType,true), StructField(19,DoubleType,true), StructField(20,DoubleType,true), StructField(21,DoubleType,true), StructField(22,Doub...training_data_df: org.apache.spark.sql.DataFrame = [year: double, 1: double ... 89 more fields]
+vectorAssembler: org.apache.spark.ml.feature.VectorAssembler = vecAssembler_7e72a6b4377d
+transformed_df: org.apache.spark.sql.DataFrame = [year: double, 1: double ... 90 more fields]
+xgbInput: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [features: vector, year: double]
+xgbParam: scala.collection.immutable.Map[String,AnyVal] = Map(eta -> 0.1, max_depth -> 3, num_round -> 100, num_workers -> 2)
+xgbRegressor: ml.dmlc.xgboost4j.scala.spark.XGBoostRegressor = xgbr_3350d00377fd
+19/09/02 04:43:22 WARN XGBoostSpark: train_test_ratio is deprecated since XGBoost 0.82, we recommend to explicitly pass a training and multiple evaluation datasets by passing 'eval_sets' and 'eval_set_names'
+Tracker started, with env={DMLC_NUM_SERVER=0, DMLC_TRACKER_URI=172.31.7.72, DMLC_TRACKER_PORT=9091, DMLC_NUM_WORKER=2}
+19/09/02 04:43:22 WARN XGBoostSpark: train_test_ratio is deprecated since XGBoost 0.82, we recommend to explicitly pass a training and multiple evaluation datasets by passing 'eval_sets' and 'eval_set_names'
+[Stage 132:>                                                        (0 + 2) / 2][04:43:31] WARNING: /xgboost/src/learner.cc:622: Tree method is automatically selected to be 'approx' for distributed training.
+[04:43:31] WARNING: /xgboost/src/learner.cc:622: Tree method is automatically selected to be 'approx' for distributed training.[04:43:31] Tree method is automatically selected to be 'approx' for distributed training.
+
+[04:43:31] Tree method is automatically selected to be 'approx' for distributed training.
+xgbModel: ml.dmlc.xgboost4j.scala.spark.XGBoostRegressionModel = xgbr_3350d00377fd
+test_data_df: org.apache.spark.sql.DataFrame = [year: double, 1: double ... 89 more fields]
+test_set: org.apache.spark.sql.DataFrame = [features: vector, year: double]
+predictions: org.apache.spark.sql.DataFrame = [features: vector, year: double ... 1 more field]
+mae_evaluator: org.apache.spark.ml.evaluation.RegressionEvaluator = regEval_366bb6c4ffd1
+mae: Double = 6.690592203607389
+Mean Absolute Error: 6.690592203607389
+rmse_evaluator: org.apache.spark.ml.evaluation.RegressionEvaluator = regEval_805060ce02ea
+rmse: Double = 12.595847186235572
+Root Mean Squared Error: 12.595847186235572
+
+
+------------ Training with Bias --------------
+
+
+biased_transformed_df: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [year: double, 1: double ... 90 more fields]
+biased_xgbInput: org.apache.spark.sql.DataFrame = [features: vector, year: double]
+Unbiased Input
++--------------------+------+
+|            features|  year|
++--------------------+------+
+|[49.98594,10.5880...|1985.0|
+|[49.4983299999999...|2008.0|
+|[45.52494,-33.665...|2004.0|
+|[40.25874,-7.5471...|1979.0|
+|[46.3045900000000...|2006.0|
+|[44.0828,8.62309,...|1994.0|
+|[42.74818,25.9639...|2009.0|
+|[49.40887,32.7921...|2002.0|
+|[52.1388700000000...|2010.0|
+|[46.95247,-46.411...|2009.0|
+|[46.0475099999999...|2001.0|
+|[51.68987,12.3841...|2010.0|
+|[35.23316,20.1244...|2000.0|
+|[41.9334099999999...|1996.0|
+|[39.97869,2.18233...|1994.0|
+|[48.32255,-18.091...|2007.0|
+|[39.18072,-10.022...|2000.0|
+|[41.9413599999999...|1995.0|
+|[50.48271,29.2153...|2010.0|
+|[43.1545,-15.9048...|2005.0|
++--------------------+------+
+only showing top 20 rows
+
+Biased Input
++--------------------+------+
+|            features|  year|
++--------------------+------+
+|[1.0,2.0,3.0,4.0,...|   0.0|
+|[37.58633,-159.68...|1922.0|
+|[39.96727,41.8845...|1922.0|
+|[43.68703,39.4915...|1922.0|
+|[46.15136,66.0833...|1922.0|
+|[40.96435,64.5129...|1922.0|
+|[41.0267400000000...|1922.0|
+|[38.19338,-142.06...|1924.0|
+|[38.19527,-137.24...|1924.0|
+|[32.20663,-88.445...|1924.0|
+|[37.12672,-149.91...|1924.0|
+|[39.00533,-162.57...|1924.0|
+|[31.20666,-192.72...|1925.0|
+|[38.4201,-157.519...|1925.0|
+|[36.43659,-114.96...|1925.0|
+|[32.00056,-27.543...|1925.0|
+|[33.60095,-135.65...|1925.0|
+|[32.70961,-137.88...|1925.0|
+|[36.14163,-131.21...|1925.0|
+|[33.30107,-106.59...|1926.0|
++--------------------+------+
+only showing top 20 rows
+
+biased_xgbRegressor: ml.dmlc.xgboost4j.scala.spark.XGBoostRegressor = xgbr_debf0c2c9c24
+19/09/02 04:47:08 WARN XGBoostSpark: train_test_ratio is deprecated since XGBoost 0.82, we recommend to explicitly pass a training and multiple evaluation datasets by passing 'eval_sets' and 'eval_set_names'
+Tracker started, with env={DMLC_NUM_SERVER=0, DMLC_TRACKER_URI=172.31.7.72, DMLC_TRACKER_PORT=9091, DMLC_NUM_WORKER=2}
+19/09/02 04:47:08 WARN XGBoostSpark: train_test_ratio is deprecated since XGBoost 0.82, we recommend to explicitly pass a training and multiple evaluation datasets by passing 'eval_sets' and 'eval_set_names'
+[Stage 145:>                                                        (0 + 2) / 2][04:47:17] WARNING: /xgboost/src/learner.cc:622: Tree method is automatically selected to be 'approx' for distributed training.[04:47:17] WARNING: /xgboost/src/learner.cc:622: Tree method is automatically selected to be 'approx' for distributed training.
+[04:47:17] Tree method is automatically selected to be 'approx' for distributed training.
+
+[04:47:17] Tree method is automatically selected to be 'approx' for distributed training.
+biased_xgbModel: ml.dmlc.xgboost4j.scala.spark.XGBoostRegressionModel = xgbr_debf0c2c9c24
+biased_predictions: org.apache.spark.sql.DataFrame = [features: vector, year: double ... 1 more field]
+biased_mae_evaluator: org.apache.spark.ml.evaluation.RegressionEvaluator = regEval_d5242e71be68
+biased_mae: Double = 6.692146358160099
+Mean Absolute Error with Biased Dataset: 6.692146358160099
+biased_rmse_evaluator: org.apache.spark.ml.evaluation.RegressionEvaluator = regEval_b4560bf36438
+biased_rmse: Double = 12.442950487220442
+Root Mean Squared Error: 12.442950487220442
