@@ -1,0 +1,228 @@
+05:31:54.168055 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.36005: Flags [P.], seq 4165074050:4165074238, ack 2610336549, win 367, options [nop,nop,TS val 2185814964 ecr 434580054], length 188
+05:31:54.208964 IP 128.32.55.170.36005 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 188, win 4090, options [nop,nop,TS val 434580284 ecr 2185814964], length 0
+05:31:55.151350 IP ip-172-31-7-72.us-west-2.compute.internal.46673 > ip-172-31-0-2.us-west-2.compute.internal.domain: 58451+ PTR? 170.55.32.128.in-addr.arpa. (44)
+05:31:55.271204 IP ip-172-31-0-2.us-west-2.compute.internal.domain > ip-172-31-7-72.us-west-2.compute.internal.46673: 58451 NXDomain 0/1/0 (116)
+05:31:56.175060 IP ip-172-31-7-72.us-west-2.compute.internal.43501 > ip-172-31-0-2.us-west-2.compute.internal.domain: 9843+ PTR? 2.0.31.172.in-addr.arpa. (41)
+05:31:56.175792 IP ip-172-31-0-2.us-west-2.compute.internal.domain > ip-172-31-7-72.us-west-2.compute.internal.43501: 9843 1/0/0 PTR ip-172-31-0-2.us-west-2.compute.internal. (95)
+05:31:56.949033 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [P.], seq 2422529831:2422529875, ack 2779001383, win 4096, options [nop,nop,TS val 434583003 ecr 2185745200], length 44
+05:31:56.951731 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 1:85, ack 44, win 300, options [nop,nop,TS val 2185817749 ecr 434583003], length 84
+05:31:57.934891 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 1:85, ack 44, win 300, options [nop,nop,TS val 2185818732 ecr 434583003], length 84
+05:31:57.988339 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 85, win 4093, options [nop,nop,TS val 434583823 ecr 2185817749], length 0
+05:31:58.171993 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 85, win 4096, options [nop,nop,TS val 434584060 ecr 2185818732], length 0
+05:31:58.407652 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [P.], seq 44:80, ack 85, win 4096, options [nop,nop,TS val 434584399 ecr 2185818732], length 36
+05:31:58.407864 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 85:121, ack 80, win 300, options [nop,nop,TS val 2185819205 ecr 434584399], length 36
+05:31:58.408093 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 121:213, ack 80, win 300, options [nop,nop,TS val 2185819205 ecr 434584399], length 92
+05:31:58.465076 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 213:289, ack 80, win 300, options [nop,nop,TS val 2185819262 ecr 434584399], length 76
+05:31:58.528874 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 289:413, ack 80, win 300, options [nop,nop,TS val 2185819326 ecr 434584399], length 124
+05:31:58.550930 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 121, win 4094, options [nop,nop,TS val 434584615 ecr 2185819205], length 0
+05:31:58.551427 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 213, win 4093, options [nop,nop,TS val 434584615 ecr 2185819205], length 0
+05:31:58.594752 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 413:505, ack 80, win 300, options [nop,nop,TS val 2185819392 ecr 434584615], length 92
+05:31:58.811032 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 289, win 4093, options [nop,nop,TS val 434584748 ecr 2185819262], length 0
+05:31:58.811057 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 505:781, ack 80, win 300, options [nop,nop,TS val 2185819608 ecr 434584748], length 276
+05:31:58.811064 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 413, win 4092, options [nop,nop,TS val 434584749 ecr 2185819326], length 0
+05:31:58.812053 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 505, win 4093, options [nop,nop,TS val 434584869 ecr 2185819392], length 0
+05:31:58.859537 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 781:905, ack 80, win 300, options [nop,nop,TS val 2185819657 ecr 434584869], length 124
+05:31:59.000505 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 781, win 4087, options [nop,nop,TS val 434585010 ecr 2185819608], length 0
+05:31:59.080069 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 905:1741, ack 80, win 300, options [nop,nop,TS val 2185819877 ecr 434585010], length 836
+05:31:59.197681 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 1741:1873, ack 80, win 300, options [nop,nop,TS val 2185819995 ecr 434585010], length 132
+05:31:59.847210 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 781, win 4096, options [nop,nop,TS val 434585670 ecr 2185819608,nop,nop,sack 1 {1741:1873}], length 0
+05:31:59.847239 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 781:1741, ack 80, win 300, options [nop,nop,TS val 2185820645 ecr 434585670], length 960
+05:32:00.119858 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 1873, win 4061, options [nop,nop,TS val 434586149 ecr 2185820645], length 0
+05:32:00.119885 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 1873:2549, ack 80, win 300, options [nop,nop,TS val 2185820917 ecr 434586149], length 676
+05:32:00.174906 ARP, Request who-has ip-172-31-0-2.us-west-2.compute.internal tell ip-172-31-7-72.us-west-2.compute.internal, length 28
+05:32:00.174944 ARP, Reply ip-172-31-0-2.us-west-2.compute.internal is-at 0a:15:49:8d:57:40 (oui Unknown), length 28
+05:32:00.212194 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 2549, win 4074, options [nop,nop,TS val 434586268 ecr 2185820917], length 0
+05:32:00.794614 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 2549:2665, ack 80, win 300, options [nop,nop,TS val 2185821592 ecr 434586268], length 116
+05:32:01.136837 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 2665, win 4092, options [nop,nop,TS val 434587160 ecr 2185821592], length 0
+05:32:03.998141 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 2665:2781, ack 80, win 300, options [nop,nop,TS val 2185824796 ecr 434587160], length 116
+05:32:04.194448 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 2781:2897, ack 80, win 300, options [nop,nop,TS val 2185824992 ecr 434587160], length 116
+05:32:04.297042 IP ip-172-31-7-72.us-west-2.compute.internal.60600 > ip-172-31-0-2.us-west-2.compute.internal.domain: 59495+ A? ip-172-31-7-72.us-west-2.compute.internal. (59)
+05:32:04.297106 IP ip-172-31-7-72.us-west-2.compute.internal.38344 > ip-172-31-0-2.us-west-2.compute.internal.domain: 23084+ AAAA? ip-172-31-7-72.us-west-2.compute.internal. (59)
+05:32:04.297885 IP ip-172-31-0-2.us-west-2.compute.internal.domain > ip-172-31-7-72.us-west-2.compute.internal.60600: 59495 1/0/0 A 172.31.7.72 (75)
+05:32:04.305612 IP ip-172-31-0-2.us-west-2.compute.internal.domain > ip-172-31-7-72.us-west-2.compute.internal.38344: 23084 0/1/0 (120)
+05:32:04.310736 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 2897, win 4092, options [nop,nop,TS val 434590323 ecr 2185824992], length 0
+05:32:04.310750 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 2897:3541, ack 80, win 300, options [nop,nop,TS val 2185825109 ecr 434590323], length 644
+05:32:04.395452 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 3541, win 4075, options [nop,nop,TS val 434590408 ecr 2185825109], length 0
+05:32:04.927592 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 3541:3657, ack 80, win 300, options [nop,nop,TS val 2185825726 ecr 434590408], length 116
+05:32:05.653700 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 3657, win 4092, options [nop,nop,TS val 434591655 ecr 2185825726], length 0
+05:32:08.928624 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 3657:3773, ack 80, win 300, options [nop,nop,TS val 2185829727 ecr 434591655], length 116
+05:32:09.128868 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 3773:3889, ack 80, win 300, options [nop,nop,TS val 2185829928 ecr 434591655], length 116
+05:32:09.164899 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 3773, win 4092, options [nop,nop,TS val 434595140 ecr 2185829727], length 0
+05:32:09.311982 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 3889, win 4092, options [nop,nop,TS val 434595220 ecr 2185829928], length 0
+05:32:09.729550 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 3889:4005, ack 80, win 300, options [nop,nop,TS val 2185830528 ecr 434595220], length 116
+05:32:09.838110 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 4005, win 4092, options [nop,nop,TS val 434595838 ecr 2185830528], length 0
+05:32:09.929960 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 4005:4121, ack 80, win 300, options [nop,nop,TS val 2185830729 ecr 434595838], length 116
+05:32:10.084211 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 4121, win 4092, options [nop,nop,TS val 434596081 ecr 2185830729], length 0
+05:32:10.129360 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 4121:4237, ack 80, win 300, options [nop,nop,TS val 2185830928 ecr 434596081], length 116
+05:32:10.278413 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 4237, win 4092, options [nop,nop,TS val 434596280 ecr 2185830928], length 0
+05:32:10.331096 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 4237:4353, ack 80, win 300, options [nop,nop,TS val 2185831130 ecr 434596280], length 116
+05:32:10.426245 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 4353, win 4092, options [nop,nop,TS val 434596380 ecr 2185831130], length 0
+05:32:11.131032 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 4353:4469, ack 80, win 300, options [nop,nop,TS val 2185831930 ecr 434596380], length 116
+05:32:11.826897 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 4353:4469, ack 80, win 300, options [nop,nop,TS val 2185832626 ecr 434596380], length 116
+05:32:11.899830 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 4469, win 4092, options [nop,nop,TS val 434597457 ecr 2185831930], length 0
+05:32:11.900609 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 4469, win 4096, options [nop,nop,TS val 434597874 ecr 2185832626], length 0
+05:32:13.259688 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 4469:4761, ack 80, win 300, options [nop,nop,TS val 2185834059 ecr 434597874], length 292
+05:32:13.259888 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 4761:5025, ack 80, win 300, options [nop,nop,TS val 2185834059 ecr 434597874], length 264
+05:32:13.364650 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 5025, win 4078, options [nop,nop,TS val 434599359 ecr 2185834059], length 0
+05:32:19.957066 ARP, Request who-has ip-172-31-7-72.us-west-2.compute.internal tell ip-172-31-0-1.us-west-2.compute.internal, length 28
+05:32:19.957082 ARP, Reply ip-172-31-7-72.us-west-2.compute.internal is-at 0a:98:54:46:f4:66 (oui Unknown), length 28
+05:32:20.751315 IP ip-172-31-7-72.us-west-2.compute.internal.57209 > ip-172-31-0-2.us-west-2.compute.internal.domain: 53194+ PTR? 1.0.31.172.in-addr.arpa. (41)
+05:32:20.752105 IP ip-172-31-0-2.us-west-2.compute.internal.domain > ip-172-31-7-72.us-west-2.compute.internal.57209: 53194 1/0/0 PTR ip-172-31-0-1.us-west-2.compute.internal. (95)
+05:33:11.263600 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 5025:5141, ack 80, win 300, options [nop,nop,TS val 2185892072 ecr 434599359], length 116
+05:33:11.760553 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 5141, win 4092, options [nop,nop,TS val 434657509 ecr 2185892072], length 0
+05:33:14.802579 IP 58.252.47.36.43335 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [S], seq 584939805, win 1433, length 0
+05:33:14.802605 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 58.252.47.36.43335: Flags [S.], seq 2107625120, ack 584939806, win 26883, options [mss 8961], length 0
+05:33:15.023356 IP ip-172-31-7-72.us-west-2.compute.internal.53451 > ip-172-31-0-2.us-west-2.compute.internal.domain: 49901+ PTR? 36.47.252.58.in-addr.arpa. (43)
+05:33:15.139357 IP 58.252.47.36.43335 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [R], seq 584939806, win 0, length 0
+05:33:15.336379 IP ip-172-31-0-2.us-west-2.compute.internal.domain > ip-172-31-7-72.us-west-2.compute.internal.53451: 49901 NXDomain 0/1/0 (98)
+05:33:16.276932 ARP, Request who-has ip-172-31-7-72.us-west-2.compute.internal tell ip-172-31-0-1.us-west-2.compute.internal, length 28
+05:33:16.276948 ARP, Reply ip-172-31-7-72.us-west-2.compute.internal is-at 0a:98:54:46:f4:66 (oui Unknown), length 28
+05:33:16.462894 ARP, Request who-has ip-172-31-0-1.us-west-2.compute.internal tell ip-172-31-7-72.us-west-2.compute.internal, length 28
+05:33:16.463138 ARP, Reply ip-172-31-0-1.us-west-2.compute.internal is-at 0a:15:49:8d:57:40 (oui Unknown), length 28
+05:33:20.046895 ARP, Request who-has ip-172-31-0-2.us-west-2.compute.internal tell ip-172-31-7-72.us-west-2.compute.internal, length 28
+05:33:20.046957 ARP, Reply ip-172-31-0-2.us-west-2.compute.internal is-at 0a:15:49:8d:57:40 (oui Unknown), length 28
+05:34:11.303460 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 5141:5257, ack 80, win 300, options [nop,nop,TS val 2185952120 ecr 434657509], length 116
+05:34:11.582480 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 5257, win 4092, options [nop,nop,TS val 434717115 ecr 2185952120], length 0
+05:34:12.597366 ARP, Request who-has ip-172-31-7-72.us-west-2.compute.internal tell ip-172-31-0-1.us-west-2.compute.internal, length 28
+05:34:12.597381 ARP, Reply ip-172-31-7-72.us-west-2.compute.internal is-at 0a:98:54:46:f4:66 (oui Unknown), length 28
+05:34:16.366896 ARP, Request who-has ip-172-31-0-1.us-west-2.compute.internal tell ip-172-31-7-72.us-west-2.compute.internal, length 28
+05:34:16.367158 ARP, Reply ip-172-31-0-1.us-west-2.compute.internal is-at 0a:15:49:8d:57:40 (oui Unknown), length 28
+05:35:02.289169 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 5257:5373, ack 80, win 300, options [nop,nop,TS val 2186003112 ecr 434717115], length 116
+05:35:02.334105 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 5373:5497, ack 80, win 300, options [nop,nop,TS val 2186003157 ecr 434717115], length 124
+05:35:02.958892 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 5497:6001, ack 80, win 300, options [nop,nop,TS val 2186003782 ecr 434717115], length 504
+05:35:03.574207 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 5497, win 4088, options [nop,nop,TS val 434769066 ecr 2186003157], length 0
+05:35:03.574242 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 6001:6117, ack 80, win 300, options [nop,nop,TS val 2186004397 ecr 434769066], length 116
+05:35:03.575111 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 6001, win 4080, options [nop,nop,TS val 434769068 ecr 2186003782], length 0
+05:35:03.675081 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 6117, win 4092, options [nop,nop,TS val 434769163 ecr 2186004397], length 0
+05:35:03.734296 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 6117:6233, ack 80, win 300, options [nop,nop,TS val 2186004557 ecr 434769163], length 116
+05:35:03.793416 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 6233:6349, ack 80, win 300, options [nop,nop,TS val 2186004616 ecr 434769163], length 116
+05:35:03.794104 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 6349:6417, ack 80, win 300, options [nop,nop,TS val 2186004617 ecr 434769163], length 68
+05:35:03.886000 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 6233, win 4092, options [nop,nop,TS val 434769344 ecr 2186004557], length 0
+05:35:03.887761 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 6417:6493, ack 80, win 300, options [nop,nop,TS val 2186004711 ecr 434769344], length 76
+05:35:03.903283 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 6417, win 4090, options [nop,nop,TS val 434769385 ecr 2186004617], length 0
+05:35:03.957822 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 6493:6625, ack 80, win 300, options [nop,nop,TS val 2186004781 ecr 434769385], length 132
+05:35:03.985501 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 6493, win 4093, options [nop,nop,TS val 434769475 ecr 2186004711], length 0
+05:35:04.191827 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 6625, win 4091, options [nop,nop,TS val 434769545 ecr 2186004781], length 0
+05:35:04.735084 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 6625:6741, ack 80, win 300, options [nop,nop,TS val 2186005558 ecr 434769545], length 116
+05:35:04.782312 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 6741:6857, ack 80, win 300, options [nop,nop,TS val 2186005605 ecr 434769545], length 116
+05:35:04.783185 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 6857:6933, ack 80, win 300, options [nop,nop,TS val 2186005606 ecr 434769545], length 76
+05:35:05.422901 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 6933:7449, ack 80, win 300, options [nop,nop,TS val 2186006246 ecr 434769545], length 516
+05:35:05.979215 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 6933, win 4093, options [nop,nop,TS val 434771329 ecr 2186005606], length 0
+05:35:05.979241 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 7449, win 4079, options [nop,nop,TS val 434771330 ecr 2186006246], length 0
+05:35:06.135406 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 7449:7565, ack 80, win 300, options [nop,nop,TS val 2186006959 ecr 434771330], length 116
+05:35:06.283676 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 7565, win 4092, options [nop,nop,TS val 434771743 ecr 2186006959], length 0
+05:35:08.918277 ARP, Request who-has ip-172-31-7-72.us-west-2.compute.internal tell ip-172-31-0-1.us-west-2.compute.internal, length 28
+05:35:08.918299 ARP, Reply ip-172-31-7-72.us-west-2.compute.internal is-at 0a:98:54:46:f4:66 (oui Unknown), length 28
+05:35:09.336302 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 7565:7681, ack 80, win 300, options [nop,nop,TS val 2186010160 ecr 434771743], length 116
+05:35:09.536567 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 7681:7797, ack 80, win 300, options [nop,nop,TS val 2186010360 ecr 434771743], length 116
+05:35:09.543804 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 7797:7913, ack 80, win 300, options [nop,nop,TS val 2186010367 ecr 434771743], length 116
+05:35:09.751657 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 7797, win 4088, options [nop,nop,TS val 434775228 ecr 2186010360], length 0
+05:35:09.751685 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 7913:8805, ack 80, win 300, options [nop,nop,TS val 2186010575 ecr 434775228], length 892
+05:35:09.753062 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 7913, win 4092, options [nop,nop,TS val 434775228 ecr 2186010367], length 0
+05:35:09.830653 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 8805, win 4068, options [nop,nop,TS val 434775281 ecr 2186010575], length 0
+05:35:10.337123 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 8805:8921, ack 80, win 300, options [nop,nop,TS val 2186011161 ecr 434775281], length 116
+05:35:10.667678 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 8921, win 4092, options [nop,nop,TS val 434776143 ecr 2186011161], length 0
+05:35:13.355100 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 8921:9037, ack 80, win 300, options [nop,nop,TS val 2186014179 ecr 434776143], length 116
+05:35:13.471370 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 9037:9153, ack 80, win 300, options [nop,nop,TS val 2186014295 ecr 434776143], length 116
+05:35:13.473577 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 9153:9965, ack 80, win 300, options [nop,nop,TS val 2186014298 ecr 434776143], length 812
+05:35:13.587626 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 9965:10089, ack 80, win 300, options [nop,nop,TS val 2186014412 ecr 434776143], length 124
+05:35:13.630733 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 9037, win 4092, options [nop,nop,TS val 434779102 ecr 2186014179], length 0
+05:35:13.630876 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 9153, win 4092, options [nop,nop,TS val 434779102 ecr 2186014295], length 0
+05:35:13.632184 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 9965, win 4070, options [nop,nop,TS val 434779103 ecr 2186014298], length 0
+05:35:13.639929 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 10089, win 4092, options [nop,nop,TS val 434779107 ecr 2186014412], length 0
+05:35:14.354938 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 10089:10205, ack 80, win 300, options [nop,nop,TS val 2186015179 ecr 434779107], length 116
+05:35:14.481497 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 10205, win 4092, options [nop,nop,TS val 434779864 ecr 2186015179], length 0
+05:35:17.588114 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 10205:10321, ack 80, win 300, options [nop,nop,TS val 2186018413 ecr 434779864], length 116
+05:35:17.725052 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 10321, win 4092, options [nop,nop,TS val 434783192 ecr 2186018413], length 0
+05:35:17.787529 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 10321:10437, ack 80, win 300, options [nop,nop,TS val 2186018612 ecr 434783192], length 116
+05:35:17.824004 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 10437:10553, ack 80, win 300, options [nop,nop,TS val 2186018649 ecr 434783192], length 116
+05:35:17.827504 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 10437, win 4092, options [nop,nop,TS val 434783293 ecr 2186018612], length 0
+05:35:17.897280 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 10553:10797, ack 80, win 300, options [nop,nop,TS val 2186018722 ecr 434783293], length 244
+05:35:17.921708 IP ip-172-31-7-72.us-west-2.compute.internal.54203 > ip-172-31-0-2.us-west-2.compute.internal.domain: 39814+ A? ip-172-31-7-72.us-west-2.compute.internal. (59)
+05:35:17.921835 IP ip-172-31-7-72.us-west-2.compute.internal.42120 > ip-172-31-0-2.us-west-2.compute.internal.domain: 50834+ AAAA? ip-172-31-7-72.us-west-2.compute.internal. (59)
+05:35:17.922523 IP ip-172-31-0-2.us-west-2.compute.internal.domain > ip-172-31-7-72.us-west-2.compute.internal.54203: 39814 1/0/0 A 172.31.7.72 (75)
+05:35:17.924856 IP ip-172-31-0-2.us-west-2.compute.internal.domain > ip-172-31-7-72.us-west-2.compute.internal.42120: 50834 0/1/0 (120)
+05:35:17.929860 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 10797:10953, ack 80, win 300, options [nop,nop,TS val 2186018754 ecr 434783293], length 156
+05:35:17.930635 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 10953:11197, ack 80, win 300, options [nop,nop,TS val 2186018755 ecr 434783293], length 244
+05:35:18.003815 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 10553, win 4092, options [nop,nop,TS val 434783370 ecr 2186018649], length 0
+05:35:18.038331 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 10797, win 4088, options [nop,nop,TS val 434783495 ecr 2186018722], length 0
+05:35:18.058091 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 10953, win 4091, options [nop,nop,TS val 434783524 ecr 2186018754], length 0
+05:35:18.058114 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 11197, win 4088, options [nop,nop,TS val 434783524 ecr 2186018755], length 0
+05:35:18.588182 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 11197:11313, ack 80, win 300, options [nop,nop,TS val 2186019413 ecr 434783524], length 116
+05:35:18.774362 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 11313, win 4092, options [nop,nop,TS val 434784089 ecr 2186019413], length 0
+05:35:21.990994 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 11313:11429, ack 80, win 300, options [nop,nop,TS val 2186022816 ecr 434784089], length 116
+05:35:22.529884 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 11429, win 4092, options [nop,nop,TS val 434787924 ecr 2186022816], length 0
+05:35:22.841648 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 11429:11545, ack 80, win 300, options [nop,nop,TS val 2186023667 ecr 434787924], length 116
+05:35:22.926934 ARP, Request who-has ip-172-31-0-2.us-west-2.compute.internal tell ip-172-31-7-72.us-west-2.compute.internal, length 28
+05:35:22.926975 ARP, Reply ip-172-31-0-2.us-west-2.compute.internal is-at 0a:15:49:8d:57:40 (oui Unknown), length 28
+05:35:22.976535 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 11545, win 4092, options [nop,nop,TS val 434788360 ecr 2186023667], length 0
+05:35:23.041949 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 11545:11661, ack 80, win 300, options [nop,nop,TS val 2186023867 ecr 434788360], length 116
+05:35:23.694903 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 11545:11661, ack 80, win 300, options [nop,nop,TS val 2186024520 ecr 434788360], length 116
+05:35:23.850707 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 11661:11777, ack 80, win 300, options [nop,nop,TS val 2186024676 ecr 434788360], length 116
+05:35:23.906174 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 11661, win 4092, options [nop,nop,TS val 434789245 ecr 2186024520], length 0
+05:35:24.158877 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 11777, win 4092, options [nop,nop,TS val 434789416 ecr 2186024676], length 0
+05:35:26.043781 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 11777:12253, ack 80, win 300, options [nop,nop,TS val 2186026869 ecr 434789416], length 476
+05:35:26.087744 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 12253, win 4081, options [nop,nop,TS val 434791525 ecr 2186026869], length 0
+05:36:05.239836 ARP, Request who-has ip-172-31-7-72.us-west-2.compute.internal tell ip-172-31-0-1.us-west-2.compute.internal, length 28
+05:36:05.239851 ARP, Reply ip-172-31-7-72.us-west-2.compute.internal is-at 0a:98:54:46:f4:66 (oui Unknown), length 28
+05:36:23.977345 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 12253:12369, ack 80, win 300, options [nop,nop,TS val 2186084810 ecr 434791525], length 116
+05:36:24.591287 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 12253:12369, ack 80, win 300, options [nop,nop,TS val 2186085424 ecr 434791525], length 116
+05:36:24.923096 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 12369, win 4092, options [nop,nop,TS val 434850196 ecr 2186084810], length 0
+05:36:24.958165 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 12369, win 4096, options [nop,nop,TS val 434850197 ecr 2186085424], length 0
+05:36:29.230929 ARP, Request who-has ip-172-31-0-1.us-west-2.compute.internal tell ip-172-31-7-72.us-west-2.compute.internal, length 28
+05:36:29.230986 ARP, Reply ip-172-31-0-1.us-west-2.compute.internal is-at 0a:15:49:8d:57:40 (oui Unknown), length 28
+05:37:01.561192 ARP, Request who-has ip-172-31-7-72.us-west-2.compute.internal tell ip-172-31-0-1.us-west-2.compute.internal, length 28
+05:37:01.561206 ARP, Reply ip-172-31-7-72.us-west-2.compute.internal is-at 0a:98:54:46:f4:66 (oui Unknown), length 28
+05:37:24.009603 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 12369:12485, ack 80, win 300, options [nop,nop,TS val 2186144849 ecr 434850197], length 116
+05:37:24.427165 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 12485, win 4092, options [nop,nop,TS val 434909411 ecr 2186144849], length 0
+05:37:29.134926 ARP, Request who-has ip-172-31-0-1.us-west-2.compute.internal tell ip-172-31-7-72.us-west-2.compute.internal, length 28
+05:37:29.134975 ARP, Reply ip-172-31-0-1.us-west-2.compute.internal is-at 0a:15:49:8d:57:40 (oui Unknown), length 28
+05:37:35.033884 IP ip-172-31-7-72.us-west-2.compute.internal.33430 > 169.254.169.254.http: Flags [S], seq 2114262103, win 26883, options [mss 8961,sackOK,TS val 1783184427 ecr 0,nop,wscale 7], length 0
+05:37:35.033965 IP 169.254.169.254.http > ip-172-31-7-72.us-west-2.compute.internal.33430: Flags [S.], seq 1730900422, ack 2114262104, win 27084, options [mss 9040,sackOK,TS val 55713166 ecr 1783184427,nop,wscale 7], length 0
+05:37:35.033987 IP ip-172-31-7-72.us-west-2.compute.internal.33430 > 169.254.169.254.http: Flags [.], ack 1, win 211, options [nop,nop,TS val 1783184427 ecr 55713166], length 0
+05:37:35.034117 IP ip-172-31-7-72.us-west-2.compute.internal.33430 > 169.254.169.254.http: Flags [P.], seq 1:160, ack 1, win 211, options [nop,nop,TS val 1783184428 ecr 55713166], length 159: HTTP: GET /latest/meta-data/iam/security-credentials HTTP/1.1
+05:37:35.034170 IP 169.254.169.254.http > ip-172-31-7-72.us-west-2.compute.internal.33430: Flags [.], ack 160, win 220, options [nop,nop,TS val 55713166 ecr 1783184428], length 0
+05:37:35.034472 IP 169.254.169.254.http > ip-172-31-7-72.us-west-2.compute.internal.33430: Flags [P.], seq 1:489, ack 160, win 220, options [nop,nop,TS val 55713166 ecr 1783184428], length 488: HTTP: HTTP/1.1 404 Not Found
+05:37:35.034480 IP ip-172-31-7-72.us-west-2.compute.internal.33430 > 169.254.169.254.http: Flags [.], ack 489, win 219, options [nop,nop,TS val 1783184428 ecr 55713166], length 0
+05:37:35.034492 IP 169.254.169.254.http > ip-172-31-7-72.us-west-2.compute.internal.33430: Flags [F.], seq 489, ack 160, win 220, options [nop,nop,TS val 55713166 ecr 1783184428], length 0
+05:37:35.034582 IP ip-172-31-7-72.us-west-2.compute.internal.33430 > 169.254.169.254.http: Flags [F.], seq 160, ack 490, win 219, options [nop,nop,TS val 1783184428 ecr 55713166], length 0
+05:37:35.034621 IP 169.254.169.254.http > ip-172-31-7-72.us-west-2.compute.internal.33430: Flags [.], ack 161, win 220, options [nop,nop,TS val 55713166 ecr 1783184428], length 0
+05:37:57.883085 ARP, Request who-has ip-172-31-7-72.us-west-2.compute.internal tell ip-172-31-0-1.us-west-2.compute.internal, length 28
+05:37:57.883099 ARP, Reply ip-172-31-7-72.us-west-2.compute.internal is-at 0a:98:54:46:f4:66 (oui Unknown), length 28
+05:38:12.143457 IP 128.32.55.170.36005 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [P.], seq 1:69, ack 188, win 4096, options [nop,nop,TS val 434956930 ecr 2185814964], length 68
+05:38:12.186906 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.36005: Flags [.], ack 69, win 367, options [nop,nop,TS val 2186193031 ecr 434956930], length 0
+05:38:12.463843 IP 128.32.55.170.36005 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [P.], seq 69:137, ack 188, win 4096, options [nop,nop,TS val 434957302 ecr 2185814964], length 68
+05:38:12.463860 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.36005: Flags [.], ack 137, win 367, options [nop,nop,TS val 2186193308 ecr 434957302], length 0
+05:38:17.262912 ARP, Request who-has ip-172-31-0-1.us-west-2.compute.internal tell ip-172-31-7-72.us-west-2.compute.internal, length 28
+05:38:17.262956 ARP, Reply ip-172-31-0-1.us-west-2.compute.internal is-at 0a:15:49:8d:57:40 (oui Unknown), length 28
+05:38:24.042269 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 12485:12601, ack 80, win 300, options [nop,nop,TS val 2186204888 ecr 434909411], length 116
+05:38:24.878897 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 12485:12601, ack 80, win 300, options [nop,nop,TS val 2186205725 ecr 434909411], length 116
+05:38:26.222916 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 12485:12601, ack 80, win 300, options [nop,nop,TS val 2186207069 ecr 434909411], length 116
+05:38:26.319704 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 12601, win 4092, options [nop,nop,TS val 434971131 ecr 2186204888], length 0
+05:38:26.349384 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 12601, win 4096, options [nop,nop,TS val 434971138 ecr 2186205725], length 0
+05:38:26.350827 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 12601, win 4096, options [nop,nop,TS val 434971157 ecr 2186207069], length 0
+05:38:34.465496 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 12601:12717, ack 80, win 300, options [nop,nop,TS val 2186215312 ecr 434971157], length 116
+05:38:34.494195 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 12717:12849, ack 80, win 300, options [nop,nop,TS val 2186215341 ecr 434971157], length 132
+05:38:34.694373 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 12849, win 4091, options [nop,nop,TS val 434979459 ecr 2186215341], length 0
+05:38:34.694399 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 12849:12989, ack 80, win 300, options [nop,nop,TS val 2186215541 ecr 434979459], length 140
+05:38:34.741796 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 12989:13121, ack 80, win 300, options [nop,nop,TS val 2186215589 ecr 434979459], length 132
+05:38:34.943738 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 12989, win 4091, options [nop,nop,TS val 434979607 ecr 2186215541], length 0
+05:38:34.943765 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 13121, win 4091, options [nop,nop,TS val 434979616 ecr 2186215589], length 0
+05:38:35.451382 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 13121:13237, ack 80, win 300, options [nop,nop,TS val 2186216298 ecr 434979616], length 116
+05:38:35.620383 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 13237:13353, ack 80, win 300, options [nop,nop,TS val 2186216467 ecr 434979616], length 116
+05:38:36.006662 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 13353, win 4092, options [nop,nop,TS val 434980782 ecr 2186216467], length 0
+05:38:36.006694 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 13353:13661, ack 80, win 300, options [nop,nop,TS val 2186216854 ecr 434980782], length 308
+05:38:36.367318 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 13661, win 4086, options [nop,nop,TS val 434980882 ecr 2186216854], length 0
+05:38:36.452233 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 13661:13777, ack 80, win 300, options [nop,nop,TS val 2186217299 ecr 434980882], length 116
+05:38:36.646951 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 13777:13893, ack 80, win 300, options [nop,nop,TS val 2186217494 ecr 434980882], length 116
+05:38:36.647443 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 13893:13969, ack 80, win 300, options [nop,nop,TS val 2186217495 ecr 434980882], length 76
+05:38:36.738131 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 13969:14053, ack 80, win 300, options [nop,nop,TS val 2186217585 ecr 434980882], length 84
+05:38:36.933703 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 13777, win 4092, options [nop,nop,TS val 434981594 ecr 2186217299], length 0
+05:38:36.933724 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 14053:14097, ack 80, win 300, options [nop,nop,TS val 2186217781 ecr 434981594], length 44
+05:38:36.933729 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 13893, win 4092, options [nop,nop,TS val 434981595 ecr 2186217494], length 0
+05:38:36.960540 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 13969, win 4093, options [nop,nop,TS val 434981595 ecr 2186217495], length 0
+05:38:36.960545 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 14053, win 4093, options [nop,nop,TS val 434981613 ecr 2186217585], length 0
+05:38:37.966889 IP ip-172-31-7-72.us-west-2.compute.internal.ssh > 128.32.55.170.37958: Flags [P.], seq 14053:14097, ack 80, win 300, options [nop,nop,TS val 2186218814 ecr 434981613], length 44
+05:38:37.994175 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 14097, win 4094, options [nop,nop,TS val 434982724 ecr 2186217781], length 0
+05:38:38.744185 IP 128.32.55.170.37958 > ip-172-31-7-72.us-west-2.compute.internal.ssh: Flags [.], ack 14097, win 4096, options [nop,nop,TS val 434983341 ecr 2186218814], length 0
+
