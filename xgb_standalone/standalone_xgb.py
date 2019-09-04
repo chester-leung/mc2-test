@@ -1,8 +1,8 @@
 import xgboost as xgb
 
 def main():
-    dtrain = xgb.DMatrix('/home/ubuntu/mc2/msd_training_data_libsvm.data')
-    dtest = xgb.DMatrix('/home/ubuntu/mc2/msd_test_data_libsvm.data')
+    dtrain = xgb.DMatrix('/home/ubuntu/mc2/data/msd_training_data_libsvm.data')
+    dtest = xgb.DMatrix('/home/ubuntu/mc2/data/msd_test_data_libsvm.data')
 
     params = {'max_depth': 3, 'min_child_weight': 1.0, 'lambda': 1.0}
     num_rounds = 100
