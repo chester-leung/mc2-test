@@ -121,6 +121,7 @@ val xgbParam = Map(
 	"num_workers" -> 2
 )
 
+println("Num Partitions: ", xgbInput.rdd.partitions.size)
 val xgbRegressor = new XGBoostRegressor(xgbParam).setFeaturesCol("features").setLabelCol("year")
 val xgbModel = xgbRegressor.fit(xgbInput)
 
