@@ -1,6 +1,6 @@
 Experiments exploring whether manually sending data to different workers actually helps
 
-*Most Similar to Federated Setting*
+**Most Similar to Federated Setting** <br>
 Using entirety of dataset, manually sending different third of data to each node.
 Rank 0 got 154571 rows, Rank 1 got 154571 rows, Rank 2 got 154572 rows
 RMSE = 9.179495
