@@ -2,16 +2,17 @@ import xgboost as xgb
 from numpy import genfromtxt
 
 def main():
-    if xgb.rabit.get_rank() == 0:
-        data = genfromtxt('/home/ubuntu/mc2/data/msd_training_data_split.csva', delimiter=',')
-    elif xgb.rabit.get_rank() == 1:
-        data = genfromtxt('/home/ubuntu/mc2/data/msd_training_data_split.csvb', delimiter=',')
-    else:
-        data = genfromtxt('/home/ubuntu/mc2/data/msd_training_data_split.csvc', delimiter=',')
-    
-    labels = data[:, 0]
-    data = data[:, 1:]
-    dtrain = xgb.DMatrix(data, label=labels)
+    dtrain = xgb.DMatrix('/home/ubuntu/mc2/data/msd_training_data_libsvm.data')
+#    if xgb.rabit.get_rank() == 0:
+#        data = genfromtxt('/home/ubuntu/mc2/data/msd_training_data_split.csva', delimiter=',')
+#    elif xgb.rabit.get_rank() == 1:
+#        data = genfromtxt('/home/ubuntu/mc2/data/msd_training_data_split.csva', delimiter=',')
+#    else:
+#        data = genfromtxt('/home/ubuntu/mc2/data/msd_training_data_split.csva', delimiter=',')
+#    
+#    labels = data[:, 0]
+#    data = data[:, 1:]
+#    dtrain = xgb.DMatrix(data, label=labels)
     dtest = xgb.DMatrix('/home/ubuntu/mc2/data/msd_test_data_libsvm.data')
 
     print("Rank: {}, dtrain rows: {}".format(xgb.rabit.get_rank(), dtrain.num_row()))

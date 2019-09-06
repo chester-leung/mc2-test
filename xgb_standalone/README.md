@@ -1,20 +1,18 @@
-Standalone Distributed XGBoost, with Rabit Tracker
+Experiments exploring whether manually sending data to different workers actually helps
 
-### Documentation to Setup Standalone Distributed XGBoost 
-1. Clone the dmlc-core library <br> <br>
-`git clone https://github.com/dmlc/dmlc-core.git`
+*Most Similar to Federated Setting*
+Using entirety of dataset, manually sending different third of data to each node.
+Rank 0 got 154571 rows, Rank 1 got 154571 rows, Rank 2 got 154572 rows
+RMSE = 9.179495
 
-2. Install the relevant Python packages. <br> <br>
-`pip3 install xgboost` <br>
-`pip3 install kubernetes` <br> <br>
-Note that we install the Kubernetes Python package so that the `dmlc-submit` script doesn't error out when we run it. `dmlc-submit` imports Kubernetes, but we won't be using it.
+Using entirety of dataset, calling DMatrix to split data across nodes.
+Rank 0 got 154578 rows, Rank 1 got 154570 rows, Rank 2 got 154567 rows
+RMSE = 9.183995
 
-3. Clone this repo <br> <br>
-`git clone https://github.com/chester-leung/mc2.git`
+Using one third of dataset, manually sending same third of data to each node.
+Rank 0, Rank 1, Rank 2 all got 154571 rows
+RMSE = 9.875301
 
-4. The `mc2/xgb_standalone/tutorial` folder contains the training and test script that we'll be using for this tutorial, along with the training and test data. Note that if passing a path to the data to `xgb.DMatrix`, the data must be in LibSVM form. Now simulate the distributed training locally with 3 workers, each with 3 GB memory. <br> <br>
-`dmlc-core/tracker/dmlc-submit --cluster local --num-workers 3 --worker-memory 3g python3 xgb_standalone/tutorial/standalone_xgb_sample.py`
-
-5. The training and evaluation should finish in under 10 seconds. I obtained a Root Mean Squared Error of `4.624654`.
-
-
+Using one third of dataset, calling DMatrix to split data across nodes.
+Rank 0 got 51519 rows, Rank 1 got 51520 rows, Rank 2 got 51533 rows
+RMSE = 9.220065
