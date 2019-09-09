@@ -2,7 +2,7 @@ import xgboost as xgb
 from numpy import genfromtxt
 
 def main():
-    data = genfromtxt('/home/ubuntu/mc2/data/msd_training_data_split_sample.csv', delimiter=',')
+    data = genfromtxt('/home/ubuntu/mc2/data/msd_training_data_split.csv', delimiter=',')
     #labels = data[:, 0]
     #data = data[:, 1:]
     dtrain = xgb.DMatrix(data[:, 1:], label=data[:, 0])
