@@ -1,12 +1,9 @@
-init rabit
-start main
-[00:33:21] XGBoost distributed mode detected, will split data among workers
-[00:33:21] Load part of data 1 of 3 parts
-[00:33:21] 66x90 matrix with 5940 entries loaded from /home/ubuntu/mc2/xgb_standalone/tutorial/msd_training_data_sample.libsvm
-[00:33:21] XGBoost distributed mode detected, will split data among workers
-[00:33:21] Load part of data 1 of 3 parts
-[00:33:21] 7x90 matrix with 630 entries loaded from /home/ubuntu/mc2/xgb_standalone/tutorial/msd_test_data_sample.libsvm
-[00:33:21] WARNING: /workspace/src/learner.cc:622: Tree method is automatically selected to be 'approx' for distributed training.
-[00:33:21] Tree method is automatically selected to be 'approx' for distributed training.
+[00:37:14] XGBoost distributed mode detected, will split data among workers
+[00:37:14] Load part of data 1 of 3 parts
+[00:37:14] 66x90 matrix with 5940 entries loaded from /home/ubuntu/mc2/xgb_standalone/tutorial/msd_training_data_sample.libsvm
+[00:37:14] XGBoost distributed mode detected, will split data among workers
+[00:37:14] Load part of data 1 of 3 parts
+[00:37:14] 7x90 matrix with 630 entries loaded from /home/ubuntu/mc2/xgb_standalone/tutorial/msd_test_data_sample.libsvm
+[00:37:14] WARNING: /workspace/src/learner.cc:622: Tree method is automatically selected to be 'approx' for distributed training.
+[00:37:14] Tree method is automatically selected to be 'approx' for distributed training.
 [0]	eval-rmse:4.624654
-end main
