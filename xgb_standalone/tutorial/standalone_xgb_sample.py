@@ -13,11 +13,12 @@ def main():
     print(model.eval(dtest))
 
 if __name__ == '__main__':
+    print("init rabit")
     xgb.rabit.init()
 
     n_workers = xgb.rabit.get_world_size()
     rank = xgb.rabit.get_rank()
-    
+    print("start main")
     main()
-
+    print("end main")
     xgb.rabit.finalize()
