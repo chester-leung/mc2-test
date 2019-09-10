@@ -8,7 +8,7 @@ def main():
     dtest = xgb.DMatrix('/home/ubuntu/mc2/xgb_standalone/tutorial/msd_test_data_sample.libsvm')
 
     params = {'max_depth': 3, 'min_child_weight': 1.0, 'lambda': 1.0}
-    num_rounds = 20
+    num_rounds = 40
     
     model = xgb.train(params, dtrain, num_rounds)
     predictions = model.predict(dtest)
